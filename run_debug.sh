@@ -10,7 +10,6 @@ done < $SCRIPT_DIR/config.conf
 arg1="Python"
 arg2="arguments"
 
-WORKDIR=$WORKDIR/src
 cd $WORKDIR
 source $CONDA_SOURCE
 conda activate $CONDA_ENV
