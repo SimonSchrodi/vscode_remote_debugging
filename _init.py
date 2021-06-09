@@ -11,7 +11,7 @@ args = parser.parse_args()
 path = Path(args.path)
 assert path.exists()
 
-print(f'Set debbuging ip to {args.ip} and port {args.port} in {args.path}')
+print(f'Set debbuging ip to {args.ip} and port {args.port} in {path}')
 
 with open(path) as f:
     data = json.load(f)
