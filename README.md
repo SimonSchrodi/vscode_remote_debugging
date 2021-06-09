@@ -1,6 +1,8 @@
 # vscode_remote_debugging
 This repository may contain useful scripts for debugging on a remote cluster.
 
+Note that we are using anaconda. If you do not want to use it, you can change the corresponding parts.
+
 ## How to set up once
 0. Clone this repository into your current working repository, i.e. where you code cool stuff
 1. In `.vscode/launch.json`: `Add configuration` -> `Python` -> `Remote Attach`. You can add any host name and port number (we will configure this in `config.conf`). You can remove `pathMappings`.
@@ -12,3 +14,4 @@ This repository may contain useful scripts for debugging on a remote cluster.
 2. Run `bash vscode_remote_debugging/init.sh`.
 3. Run `bash vscode_remote_debugging/run_debug.sh` (might take a second to start).
 4. Attach to the run via VSCode.
+5. Debug as if you were running the code on your local machine.
