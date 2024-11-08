@@ -9,9 +9,9 @@ do
 done < $SCRIPT_DIR/config.conf
 
 cd $WORKDIR
-source $CONDA_SOURCE
-conda activate $CONDA_ENV
+source $SOURCE
+mamba activate $ENV
 
 ip=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
 python vscode_remote_debugging/_init.py --ip $ip --port $PORT --path $LAUNCH_JSON
-conda deactivate
+mamba deactivate
