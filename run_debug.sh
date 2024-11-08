@@ -12,6 +12,6 @@ arg2="arguments"
 
 cd $WORKDIR
 source $SOURCE
-mamba activate $ENV
+conda activate $ENV
 python -m debugpy --listen 0.0.0.0:$PORT --wait-for-client $WORKDIR/main.py $arg1 $arg2
-mamba deactivate
+conda deactivate

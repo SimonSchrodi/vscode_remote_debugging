@@ -1,7 +1,7 @@
 # vscode_remote_debugging
 This repository may contain useful scripts for debugging on a remote cluster.
 
-Note that we are using mamba (we previously used anaconda). If you do not want to use it, you can change the corresponding parts.
+Note that we are using conda (e.g., mini-forge). If you do not want to use it, you can change the corresponding parts.
 
 ## How to set up once
 0. Clone this repository into your current working repository, i.e., where you code cool stuff.
